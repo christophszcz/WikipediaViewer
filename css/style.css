@@ -13,4 +13,14 @@ body {
   text-align: center;
 }
 
+.random-article {
+  text-align: center;
+}
+
+a:hover{
+  color: #B2AD4E;
+  text-decoration:none;
+}
+
+
  
