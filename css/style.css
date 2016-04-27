@@ -22,12 +22,14 @@ a:link, a:visited, a:hover{
   text-decoration:none;
 }
 
-/*a:visited{
-  color: #B2AD4E;
-  text-decoration:none;
-}*/
+.form-control {
+  border: 2px solid #4682b4;
+}
 
-
+.btn-default {
+  border-color: #696969;
+  background-color: #E6E6E6;
+}
 
 
  
