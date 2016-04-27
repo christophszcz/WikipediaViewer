@@ -17,10 +17,17 @@ body {
   text-align: center;
 }
 
-a:hover{
+a:link, a:visited, a:hover{
   color: #B2AD4E;
   text-decoration:none;
 }
+
+/*a:visited{
+  color: #B2AD4E;
+  text-decoration:none;
+}*/
+
+
 
 
  
