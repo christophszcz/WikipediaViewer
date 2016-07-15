@@ -1,3 +1,3 @@
 ###Wikipedia Viewer
 
-[http://codepen.io/cjszcz17/pen/XdPyqj](http://codepen.io/cjszcz17/pen/XdPyqj "title" target="_blank")
+[http://codepen.io/cjszcz17/pen/XdPyqj](http://codepen.io/cjszcz17/pen/XdPyqj){:target="_blank"}
