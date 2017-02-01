@@ -1,6 +1,12 @@
 $(document).ready(function() {
+  $('#searchfield').keypress(function(e){
+    if(e.keyCode==13){
+     $('#getSearches').click(); 
+    }
+  });
+  
   $("#getSearches").on("click", function(){
-  	var search = $('#searchfield').val();
+  	search = $('#searchfield').val();
 	  $.getJSON("https://en.wikipedia.org/w/api.php?action=opensearch&search=" + search + "&limit=10&formate=json&origin=*", function(json) {
 	 	var html = "";
     for(var i = 0; i < 10; i++){
@@ -11,11 +17,11 @@ $(document).ready(function() {
       html +="</div>";
       html +="<hr/>";
     }
-    $(document.body).prepend(
-    	"<div class='col-lg-6 col-lg-offset-3 group'><div class='input-group'><input id='searchfield' type='search' class='form-control' placeholder='Search for...' value='" 
-    	+ json[0] + 
-    	"'><span class='input-group-btn'><button class='btn btn-default' id='getSearches' type='button'><div class='glyphicon glyphicon-search'></div></button></span></div></div>");
 		$(".container").html(html);
+    $(document.body).prepend(
+        "<div class='col-lg-6 col-lg-offset-3 group'><div class='input-group'><input id='searchfield' type='search' class='form-control' placeholder='Search for...' value='" 
+        + json[0] + 
+        "'><span class='input-group-btn'><button class='btn btn-default' id='getSearches' type='button'><div class='glyphicon glyphicon-search'></div></button></span></div></div>");
 		});
 	});
 });
