@@ -47,6 +47,13 @@ a.description{
   color:#000;
 }
 
-a.description:link, a.description:visited, a.description:hover{
-  
+.search-results:hover{
+  border-color: #66AFE9;
+  padding-left: 5px;
+  border-style: solid;
+  border-left-width: 3px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  margin-bottom: 5px;
 }

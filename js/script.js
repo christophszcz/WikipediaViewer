@@ -8,8 +8,8 @@ $(document).ready(function() {
       html +="<a href='"  + json[3][i] +"' class='description'>"
       html +="<p class='result-title'>" + json[1][i] + "</p>"; 
       html += json[2][i]+ "</a>";
-      html +="<hr/>";
       html +="</div>";
+      html +="<hr/>";
     }
 		$(".container").html(html);
 		});
