@@ -47,6 +47,10 @@ a.description{
   color:#000;
 }
 
+.search-results{
+  margin-top: 300px;
+}
+
 .search-results:hover{
   border-color: #66AFE9;
   padding-left: 5px;
