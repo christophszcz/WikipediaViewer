@@ -7,7 +7,7 @@ body {
 }
 
 .group {
-  margin-top: 200px;
+  margin-top: 100px;
 }
      
 .text {
@@ -28,12 +28,28 @@ a:link, a:visited, a:hover{
 
 .form-control {
   border: 2px solid #4682b4;
+  z-index: 1;
 }
 
 .btn-default {
   border-color: #696969;
   background-color: #E6E6E6;
 } 
+
+/*Search Clear */
+
+#searchclear {
+  position: absolute;
+  right: 45px;
+  top: 25px;
+  bottom: 0;
+  height: 40px;
+  margin: auto;
+  font-size: 14px;
+  cursor: pointer;
+  color: #BDA199;
+  z-index: 1000;
+}
 
 /* Search Results */
 
@@ -48,7 +64,7 @@ a.description{
 }
 
 .space{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .search-item:hover{
@@ -60,4 +76,8 @@ a.description{
   border-bottom-width: 0px;
   border-right-width: 0px;
   margin-bottom: 5px;
+}
+
+hr{
+  color: #333333;
 }

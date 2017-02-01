@@ -5,6 +5,21 @@ $(document).ready(function() {
     }
   });
 
+  $("#searchclear").hide();
+
+  $( "#searchfield").focus(function(){
+    $("#searchclear").show();
+    $("#searchclear").click(function(){
+      $("#searchfield").val('');
+    });
+  });
+
+  // $( "#searchfield").focusout(function(){
+  //   // if($('#searchfield').val() !== ""){
+  //     $("#searchclear").hide();
+  //   // }
+  // });
+
   $("#getSearches").on("click", function searching(){
   	var search = $('#searchfield').val();
 	  $.getJSON("https://en.wikipedia.org/w/api.php?action=opensearch&search=" + search + "&limit=10&formate=json&origin=*", function(json) {
@@ -24,5 +39,6 @@ $(document).ready(function() {
         $('.search-results').addClass('space');
       }
 		});
+
 	});
 });
