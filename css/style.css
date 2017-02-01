@@ -34,3 +34,19 @@ a:link, a:visited, a:hover{
   border-color: #696969;
   background-color: #E6E6E6;
 } 
+
+/* Search Results */
+
+.result-title{
+  color: #B2AD4E;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+
+a.description{
+  color:#000;
+}
+
+a.description:link, a.description:visited, a.description:hover{
+  
+}
