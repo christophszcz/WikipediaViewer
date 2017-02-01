@@ -47,11 +47,11 @@ a.description{
   color:#000;
 }
 
-.search-results{
-  margin-top: 300px;
+.space{
+  margin-top: 100px;
 }
 
-.search-results:hover{
+.search-item:hover{
   border-color: #66AFE9;
   padding-left: 5px;
   border-style: solid;
