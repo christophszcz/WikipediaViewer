@@ -14,11 +14,13 @@ $(document).ready(function() {
     });
   });
 
-  // $( "#searchfield").focusout(function(){
-  //   // if($('#searchfield').val() !== ""){
-  //     $("#searchclear").hide();
-  //   // }
+  // $('#remove').on('click', function removeHtml(){
+  //   $('.search-results').remove();
+  //   $('.input-group').append("<div class='search-results'><p class='text' id='instruction'>Click icon to search</p></div>");
   // });
+  function goBack(){
+    window.history.back();
+  }
 
   $("#getSearches").on("click", function searching(){
   	var search = $('#searchfield').val();
@@ -38,6 +40,8 @@ $(document).ready(function() {
       if(!($('#instruction').length > 0)){
         $('.search-results').addClass('space');
       }
+
+      $('body').prepend("<p id='remove' >Back</p>");
 		});
 
 	});
