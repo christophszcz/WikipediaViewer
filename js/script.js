@@ -34,7 +34,7 @@ $(document).ready(function() {
 
       if($('.click-instructions').css('display') === 'none'){
         $('.search-results').addClass('space');
-        $('body').prepend("<p id='remove' >Back</p>");
+        $('body').prepend("<p id='remove' ><i class='glyphicon glyphicon-arrow-left'></i> Back</p>");
       }
 
       $('#remove').on('click', function removeHtml(){
