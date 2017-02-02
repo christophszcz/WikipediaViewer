@@ -27,18 +27,20 @@ $(document).ready(function() {
         html +="</div>";
         html +="<hr/>";
       }
+      $('.click-instructions').hide();
+      $('#remove').hide();
   		$(".search-results").html(html);
+      $('.search-results').show();
 
-      if(!($('#instruction').length > 0)){
+      if($('.click-instructions').css('display') === 'none'){
         $('.search-results').addClass('space');
+        $('body').prepend("<p id='remove' >Back</p>");
       }
 
-      $('body').prepend("<p id='remove' >Back</p>");
-
       $('#remove').on('click', function removeHtml(){
-        $('.search-results').remove();
-        $('#remove').remove();
-        $('.col-lg-6').append("<br><div class='search-results'><p class='text' id='instruction'>Click icon to search</p></div>");
+        $('#remove').hide();
+        $('.search-results').hide();
+        $('.click-instructions').show();
       });
 
 		});
