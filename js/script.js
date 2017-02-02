@@ -14,14 +14,6 @@ $(document).ready(function() {
     });
   });
 
-  // $('#remove').on('click', function removeHtml(){
-  //   $('.search-results').remove();
-  //   $('.input-group').append("<div class='search-results'><p class='text' id='instruction'>Click icon to search</p></div>");
-  // });
-  function goBack(){
-    window.history.back();
-  }
-
   $("#getSearches").on("click", function searching(){
   	var search = $('#searchfield').val();
 	  $.getJSON("https://en.wikipedia.org/w/api.php?action=opensearch&search=" + search + "&limit=10&formate=json&origin=*", function(json) {
@@ -42,7 +34,13 @@ $(document).ready(function() {
       }
 
       $('body').prepend("<p id='remove' >Back</p>");
-		});
 
+      $('#remove').on('click', function removeHtml(){
+        $('.search-results').remove();
+        $('#remove').remove();
+        $('.col-lg-6').append("<br><div class='search-results'><p class='text' id='instruction'>Click icon to search</p></div>");
+      });
+
+		});
 	});
 });
