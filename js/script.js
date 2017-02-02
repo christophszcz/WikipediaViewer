@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $('#searchfield').keypress(function(e){
     if(e.keyCode==13){
      $('#getSearches').click(); 
@@ -7,10 +8,19 @@ $(document).ready(function() {
 
   $("#searchclear").hide();
 
-  $( "#searchfield").focus(function(){
+  $('input#searchfield').focus(function() {
+    if($( "#searchfield").val().length === 0) {                   
+      $("#searchclear").hide();    
+    } else if ($( "input#searchfield").val('')) {
+      $("#searchclear").hide(); 
+    }
+  });  
+
+  $('input#searchfield').keypress(function() {
     $("#searchclear").show();
     $("#searchclear").click(function(){
       $("#searchfield").val('');
+      $("#searchclear").hide();
     });
   });
 
