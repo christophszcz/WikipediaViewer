@@ -1,3 +1,3 @@
 ## Wikipedia Viewer
 
-[http://codepen.io/cjszcz17/pen/dNebWb](http://codepen.io/cjszcz17/pen/dNebWb)
+[http://christophszcz.github.io/wikipediaViewer/](http://christophszcz.github.io/wikipediaViewer/)
