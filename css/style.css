@@ -86,3 +86,21 @@ a.description{
 hr{
   border-top: 1px solid #808080;
 }
+
+/* Dev Info */
+
+.dev-info{
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 14px;
+  text-align: right;
+  position: relative;
+  top: 200px;
+  right: 10px;
+  color: #344556;
+}
+
+#website-link{
+  font-weight: 700;
+  text-decoration: none;
+  color: #344556;
+}
