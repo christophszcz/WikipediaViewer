@@ -31,14 +31,14 @@ $(document).ready(function() {
 
       if (json[1][0] == undefined){
         html += "<div>";
-        html +="<p>No Search Results</p>"; 
+        html +="<p class='no-search-results'>No Search Results</p>"; 
         html +="</div>"
       }else{
         for(var i = 0; i < 10; i++){
           if (json[1][i] === undefined){
             html +="";
           } else {
-            html += "<div class = 'search-item'>";
+            html += "<div class='search-item'>";
             html +="<a href='"  + json[3][i] +"' class='description' target='_blank'>"
             html +="<p class='result-title'>" + json[1][i] + "</p>"; 
             html += json[2][i]+ "</a>";

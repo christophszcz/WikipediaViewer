@@ -87,6 +87,14 @@ hr{
   border-top: 1px solid #808080;
 }
 
+/* No Search Results */
+
+.no-search-results{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  color: #000;
+}
+
 /* Dev Info */
 
 .dev-info{
