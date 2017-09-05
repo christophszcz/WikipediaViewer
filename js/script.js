@@ -11,14 +11,18 @@ $(document).ready(function() {
   $('input#searchfield').focus(function() {
     if($( "#searchfield").val().length === 0) {                   
       $("#searchclear").hide();    
-    } else if ($( "input#searchfield").val('')) {
-      $("#searchclear").hide(); 
     }
+    else if ($( "#searchfield").val() === '') {
+      $("#searchclear").hide(); 
+    } 
+    // else if ($( "input#searchfield").val('')) {
+    //   $("#searchclear").hide(); 
+    // }
   });  
 
   $('input#searchfield').keypress(function() {
     $("#searchclear").show();
-    $("#searchclear").click(function(){
+    $("span#searchclear.glyphicon.glyphicon-remove-circle").click(function(){
       $("#searchfield").val('');
       $("#searchclear").hide();
     });
